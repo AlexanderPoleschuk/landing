@@ -209,10 +209,10 @@ a:hover { text-decoration: underline; }
 
 .hero-photo {
   position: relative;
-  width: 100%;
-  max-width: 560px;
-  height: clamp(280px, 30vw, 330px);
-  border-radius: 36px;
+  width: 80%;
+  max-width: 440px;
+  height: clamp(220px, 24vw, 270px); 
+  border-radius: 32px;
   background: linear-gradient(145deg, #5e3b2e 0%, #3b4b63 50%, #1f3c5d 100%);
   box-shadow: 0 20px 40px rgba(15, 23, 42, 0.35);
   overflow: visible;
@@ -619,7 +619,7 @@ button:focus-visible,
 .mini-note {
   margin: 22px 0 10px;
   padding-top: 12px;
-  border-top: 1px solid rgba(148, 163, 184, 0.45);
+  border-top: none;
   font-size: 13px;
   color: var(--muted);
 }
