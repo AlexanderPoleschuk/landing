@@ -339,14 +339,9 @@ a:hover { text-decoration: underline; }
 
 
 
-.list {
-  margin: 8px 0 0;
-  padding-left: 18px;
-  font-size: 14px;
-  color: var(--muted);
-}
 
-.list li + li { margin-top: 4px; }
+
+
 
 .card-actions {
   display: flex;
@@ -624,12 +619,102 @@ button:focus-visible,
   color: var(--muted);
 }
 
+
+
+
+
+/* === Mobile micro-tweaks (injected) === */
+@media (max-width: 480px) {
+  /* HERO: make primary CTA dominant and reduce choice friction */
+  .hero-actions {
+    flex-direction: column;
+  }
+  .hero-actions .btn-primary,
+  .hero-actions .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-actions .btn-secondary {
+    opacity: 0.92;
+  }
+
+  /* HERO: keep photo from eating the first screen */
+  .hero-photo {
+    width: 100%;
+    max-width: 100%;
+    height: 220px;
+  }
+  .hero-right {
+    justify-content: flex-start;
+  }
+
+  /* HERO: improve subtitle scanability on narrow screens */
+  .hero-subtitle {
+    max-width: 32ch;
+  }
+
+  /* CALL: add a visual pause in the "На выходе" list */
+  #call .grid-2 > .card:nth-child(2) .list li:nth-child(3) {
+    margin-bottom: 12px;
+  }
+
+  /* BOOK: de-emphasize the 2nd lead line (supporting proof) */
+  #book .lead + .lead {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-top: 8px;
+  }
+}
+/* === End mobile micro-tweaks === */
+
+
+/* === Unified bullets (stable size) === */
+.list,
 .mini-list {
-  margin: 0;
-  padding-left: 18px;
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0 0;
   color: var(--muted);
-  font-size: 13px;
-  line-height: 1.45;
 }
 
-.mini-list li { margin: 6px 0; }
+.mini-list { margin-top: 0; }
+
+.list li,
+.mini-list li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.list li::before,
+.mini-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  font-size: 16px;
+  line-height: 1;
+  color: #64748b;
+}
+
+.list li + li,
+.mini-list li + li {
+  margin-top: 6px;
+}
+/* === End unified bullets === */
+
+/* === Typography normalization (injected) === */
+:root {
+  --body-size: 14px; /* main readable size across cards */
+}
+
+/* Normalize key descriptive texts to the same size */
+.card p,
+.list,
+.mini-list,
+.mini-note,
+.hint,
+.compact {
+  font-size: var(--body-size);
+}
+/* === End typography normalization === */
+
