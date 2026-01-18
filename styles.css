@@ -149,6 +149,11 @@ a:hover {
     margin: 0 0 12px;
 }
 
+.hero-badge {
+  font-weight: 500;
+  color: var(--muted);
+}
+
 .hero-context {
     font-size: 14px;
     color: var(--muted);
@@ -389,7 +394,12 @@ a:hover {
 .compact {
     margin: 0 0 8px;
     font-size: var(--text-md);
+    font-weight: 600;
     color: var(--muted);
+}
+
+.compact-center {
+    text-align: center;
 }
 
 .lead {
@@ -867,4 +877,13 @@ body.modal-open {
 .cta-final .card-actions {
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.price-card ul,
+.price-card p:not(.compact) {
+  text-align: left;
+}
+
+.price-card .card-actions {
+  margin-top: auto;
 }

@@ -36,6 +36,9 @@
                         <span class="badge">15+ лет в QA, 10+ лет в управлении</span>
                     </div>
                     <h1 class="hero-title">Александр Полещук</h1>
+                    <div class="hero-subtitle hero-badge">
+                        Автор книги «Записки собеседника»
+                    </div>
                     <p class="hero-subtitle">
                         Консультации 1-на-1 по поиску работы в IT - резюме, LinkedIn, интервью, переговоры.
                         Найдем, где ты теряешь шанс, и соберем план действий.
@@ -119,14 +122,17 @@
                 <div class="grid-3">
                     <div class="card price-card">
                         <div class="mini-badge">Стандарт</div>
-                        <h3>Разбор 90 минут + все материалы</h3>
+                        <h3>Разбор 90 минут</h3>
+                        <p class="compact compact-center">
+                            + все материалы (PDF-книга, чек-листы, аудио по запросу)
+                        </p>
                         <p>Разбор резюме, LinkedIn и интервью с позиции нанимающего менеджера.</p>
                         <ul class="mini-list">
-                            <li>До - экспресс-разбор резюме и LinkedIn.</li>
-                            <li>Созвон - диагностика и план действий.</li>
-                            <li>После - список правок с приоритетами.</li>
+                            <li>До: экспресс-разбор резюме и LinkedIn.</li>
+                            <li>Созвон: диагностика и план действий.</li>
+                            <li>После: список правок с приоритетами.</li>
                         </ul>
-                        <div class="price">99 USD</div>
+                        <div class="price">89 USD</div>
                         <div class="card-actions center">
                             <a class="btn-primary js-lead" data-package="consult" href="#">Записаться на разбор</a>
                         </div>
@@ -137,14 +143,17 @@
                     </div>
                     <div class="card price-card card-premium">
                         <div class="mini-badge">Премиум</div>
-                        <h3>Сопровождение (почасово) + все материалы</h3>
+                        <h3>Сопровождение (почасово)</h3>
+                        <p class="compact compact-center">
+                            + все материалы (PDF-книга, чек-листы, аудио по запросу)
+                        </p>
                         <p>Точечная работа: правки, интервью, кейсы, переговоры.</p>
                         <ul class="mini-list">
-                            <li>Интервью - репетиция самопрезентации и сложных вопросов.</li>
-                            <li>Переговоры - стратегия и репетиция диалога.</li>
-                            <li>Итерации правок - резюме и LinkedIn в несколько подходов.</li>
+                            <li>Интервью: репетиция самопрезентации и сложных вопросов.</li>
+                            <li>Переговоры: стратегия и репетиция диалога.</li>
+                            <li>Итерации правок: резюме и LinkedIn в несколько подходов.</li>
                         </ul>
-                        <div class="price">69 USD/час</div>
+                        <div class="price">59 USD/час</div>
                         <div class="card-actions center">
                             <a class="btn-primary js-lead" data-package="mentoring" href="#">Запросить сопровождение</a>
                         </div>
@@ -156,8 +165,17 @@
                     <div class="card price-card">
                         <div class="mini-badge">Самоподготовка</div>
                         <h3>Книга + дополнительные материалы</h3>
-                        <p>Книга (PDF) + шаблоны/чек-листы + аудио (ссылка по запросу).<br>Для самостоятельной подготовки.</p>
-                        <div class="price">35 USD</div>
+                        <p class="compact compact-center">PDF, чек-листы.<br>
+                            Для самостоятельной подготовки.</p>
+                        <p>Что входит:</p>
+                        <ul class="mini-list">
+                            <li>Книга (PDF, 115 страниц)</li>
+                            <li>Трекер откликов и воронки</li>
+                            <li>Шаблон резюме + примеры</li>
+                            <li>LinkedIn чек-лист + скрипты для outreach</li>
+                            <li>Интервью и оффер: 1-минутный питч, фразы, вопросы, переговоры</li>
+                        </ul>
+                        <div class="price">29 USD</div>
                         <div class="card-actions center">
                             <a class="btn-primary js-lead" data-package="bundle" href="#">Получить книгу и материалы</a>
                         </div>
@@ -182,7 +200,6 @@
                         <h3>Что входит</h3>
                         <ul class="mini-list">
                             <li>Книга (PDF, 115 страниц)</li>
-                            <li>Аудиоверсия (ссылка по запросу) ~3 часа, AI-озвучка</li>
                             <li>Шаблоны, чек-листы и трекер откликов</li>
                         </ul>
                         <div class="card-actions">
@@ -257,6 +274,23 @@
                     </div>
                 </div>
             </section>
+            <section class="section" id="custom-offer">
+                <div class="grid-1">
+                    <div class="card custom-card">
+                        <h2 class="section-title">Нужен другой формат?</h2>
+                        <p class="lead">
+                            Если ни один из форматов выше не подходит - напиши, и мы найдём решение под твой кейс.
+                            Это может быть разбор LinkedIn, профиля, самопрезентации или чего-то ещё.
+                        </p>
+                        <p class="lead">
+                            Подскажу, с чего начать и что даст максимальный эффект в твоей ситуации.
+                        </p>
+                        <div class="card-actions center">
+                            <a class="btn-primary js-lead" data-package="custom" href="#">Запросить индивидуальный формат</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- CONTACTS -->
             <section class="section" id="contacts">
                 <div class="section-header">
@@ -306,15 +340,16 @@
         });
 
         // Lead form
-        var FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeX3xfS_TP-u6s2h6fJwNAgGW5p3AXH3208SHfkJe-DEq9IPQ/viewform";
+        var FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSftlzaAbvAM563JBNZe5KLMYpnVzD3fEn_o30i_60KhGrlPZw/viewform";
 
-        var PACKAGE_ENTRY_ID = "1601662748";
+        var PACKAGE_ENTRY_ID = "1130544471";
 
         var PACKAGE_LABELS = {
             intro: "15-минутный созвон (входной)",
-            bundle: "Книга + доп. материалы + аудио",
+            bundle: "Книга + дополнительные материалы",
             consult: "Книга + консультация (90 минут)",
             mentoring: "Книга + сопровождение (почасово)",
+            custom: "Индивидуальный запрос (кастомный формат)"
         };
 
         function buildPrefilledUrl(baseUrl, entryId, label, embedded) {
