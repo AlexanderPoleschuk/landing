@@ -4,29 +4,38 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Спасибо за покупку</title>
+  <link href="assets/favicon.png" rel="icon" type="image/png" />
+  <link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-  <div class="page thankyou-page">
-    <main class="thankyou-wrap">
-      <section class="hero thankyou-hero" aria-label="Спасибо за покупку">
-        <div class="hero-left thankyou-content">
-          <div class="hero-badges">
-            <span class="badge"><span class="badge-dot"></span>Оплата получена</span>
+  <div class="page">
+    <header class="header">
+      <a aria-label="Вернуться на главную" class="logo" href="./index.html">
+        <img alt="Alexander Poleshchuk" loading="lazy" src="assets/Logo.png" />
+      </a>
+    </header>
+
+    <main class="thankyou-page">
+      <div class="thankyou-wrap">
+        <section class="hero thankyou-hero" aria-label="Спасибо за покупку">
+          <div class="hero-left thankyou-content">
+            <div class="hero-badges">
+              <span class="badge"><span class="badge-dot"></span>Оплата получена</span>
+            </div>
+            <h1 class="hero-title">Спасибо за покупку</h1>
+            <p class="hero-subtitle">Заявка и оплата книги получены.</p>
+            <p class="hero-context">Материалы отправлю вручную на email из формы в течение 24 часов, обычно быстрее.</p>
+            <div class="hero-actions">
+              <a class="btn-primary" href="./index.html">Вернуться на главную</a>
+              <a class="btn-secondary" href="mailto:al.poleschuk@gmail.com">Связаться по email</a>
+            </div>
+            <p class="hero-note">Если не получил письмо в течение дня - напиши мне напрямую, я отправлю материалы повторно.</p>
           </div>
-          <h1 class="hero-title">Спасибо за покупку</h1>
-          <p class="hero-subtitle">Заявка и оплата книги получены.</p>
-          <p class="hero-context">Материалы отправлю вручную на email из формы в течение 24 часов, обычно быстрее.
-          </p>
-          <div class="hero-actions">
-            <a class="btn-primary" href="./index.html">Вернуться на главную</a>
-            <a class="btn-secondary" href="mailto:al.poleschuk@gmail.com">Связаться по email</a>
-          </div>
-          <p class="hero-note">
-          Если не получил письмо в течение дня - напиши мне напрямую, я отправлю материалы повторно.
-          </p>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   </div>
 </body>
