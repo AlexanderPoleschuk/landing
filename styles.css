@@ -668,6 +668,8 @@ button:focus-visible,
 
 /* Responsive */
 
+/* Responsive */
+
 @media (max-width: 960px) {
     .grid-3 {
         grid-template-columns: minmax(0, 1fr);
@@ -684,6 +686,11 @@ button:focus-visible,
     .nav {
         margin-left: 0;
         justify-content: flex-start;
+    }
+
+    .nav a {
+        font-size: 14px;
+        padding: 7px 11px;
     }
 
     .hero {
