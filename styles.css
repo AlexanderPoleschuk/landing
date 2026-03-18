@@ -37,7 +37,7 @@ a:hover {
 }
 
 .page {
-    max-width: 1040px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 24px 16px 56px;
 }
@@ -248,9 +248,9 @@ a:hover {
 
 .hero-photo {
     position: relative;
-    width: 90%;
-    max-width: 500px;
-    height: clamp(250px, 28vw, 320px);
+    width: 96%;
+    max-width: 530px;
+    height: clamp(270px, 30vw, 340px);
     border-radius: 32px;
     background: linear-gradient(145deg, #5e3b2e 0%, #3b4b63 50%, #1f3c5d 100%);
     box-shadow: 0 20px 40px rgba(15, 23, 42, 0.35);
@@ -464,6 +464,16 @@ a:hover {
     margin: 6px 0 18px;
     font-size: var(--text-md);
     color: var(--muted);
+}
+
+.card-recommended {
+    border-color: rgba(79, 70, 229, 0.55);
+    background: linear-gradient(135deg, rgba(239, 246, 255, 0.85), #ffffff);
+    box-shadow:
+        0 14px 36px rgba(79, 70, 229, 0.16),
+        0 0 0 1px rgba(79, 70, 229, 0.12),
+        0 0 28px rgba(79, 70, 229, 0.14);
+    position: relative;
 }
 
 .card-premium {
@@ -745,6 +755,11 @@ button:focus-visible,
 
 #book .mini-list+.lead {
     margin-top: 22px;
+}
+
+#book .btn-secondary {
+    background: rgba(37, 99, 235, 0.12);
+    box-shadow: none;
 }
 
 /* ===== Thank you pages ===== */
